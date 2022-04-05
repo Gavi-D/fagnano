@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ --><title>Fagnano's Problem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="fagnano_rectangle_geogebra_bw.png" alt="Fagnano Rectangle">
+    <p>Named after the Italian Mathematician, Giovanni Fransesco Fagnano dei Toschi, 
+        Fagnano’s Problem (for the rectangle) asks to
+        find one point on each edge of the rectangle so that the 
+        inner quadrilateral formed has the minimal perimeter.</p>
+        <br>
+    <h3 style="left: 100%;">Understanding the problem</h3>
+    <video controls >
+        <source src="Daksh.mp4" type="video/mp4">
+    </video>
+    <p>Given a rectangle, we have to find four points on the perimeter (i.e. one point on each edge, in pink) such that
+        the inner quadrilateral (in turquoise) has minimal perimeter
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        Any Conjectures?</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: left;">Maybe some intuition...</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Here's a well-known result that might help us...we use this almost everyday!</p>
+    <p><b>The shortest distance between any two points is a straight line</b>...atleast in the Euclidean Plane :)</p>
+    <p style="text-align: left;">How does this apply to our problem?</p>
+    <p style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; consider two points on one side of a line...</p>
+    <img src="reflection.png" alt="Reflection">
+    <p style="text-align: left;">Where does the point R lie on the line such that PR + QR is minimal?</p>
+    <video controls >
+        <source src="pqr.mp4" type="video/mp4">
+    </video>
+    <p>Reflection!</p>
+    <br>
+    <br>
+    <br>
+    <video controls >
+        <source src="reflection_pqr.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Now that we have some intuition/idea about a tool we can use to solve this...let's apply it!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: left;">Let's start off with some reflection...</p>
+    <video controls >
+        <source src="rectangle_reflection.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <p style="text-align: left;">Let's do the same for the four random points and the consequent quadrilaterals they form</p>
+    <video controls >
+        <source src="reflection_points.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <p>For the climax...</p>
+    <br>
+    <br>
+    <p style="text-align: left;">The <u>solution</u> is the alignment of the points with the straight line drawn below</p>
+    <video controls >
+        <source src="solution_line.mp4" type="video/mp4">
+    </video>
+    <p style="text-align: left;">Why that line?</p>
+    <p>That's because the point on the far bottom left is the same point reflected three times; it has just moved to the far top right position. Since it's the same point (as we saw in the reflection of Q and Q'), the shortest path between those two points is the straight line</p>
+    <br>
+    <br>
+    <p style="text-align: left;">Let's do some alignment...</p>
+    <video controls >
+        <source src="almost.mp4" type="video/mp4">
+    </video>
+    <p style="text-align: left;">Almost there...</p>
+    <video controls >
+        <source src="mid_solution.mp4" type="video/mp4">
+    </video>
+    <p>So the solution is the <u>midpoint of each edge</u> gives the minimal perimeter of the inner quadrilateral</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>But is that the only solution?</p>
+    <p style="text-align: left;">.......</p>
+    <video controls >
+        <source src="near_corner_solution.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: left;">So two solutions?</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <video controls >
+        <source src="several_solutions.mp4" type="video/mp4">
+    </video>
+    <p>There are infinitely many solutions!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>In general, if the edges of the inner quadrilateral are parallel to the diagonals of the triangle, then it's a solution!</p>
+    <video controls >
+        <source src="diagonals.mp4" type="video/mp4">
+    </video>
+    <p>Isn't this mindblowing!!!</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>PS: What if (like Marvel)....Can this be applied to other polygons?</p>
+    <!-- <div class="canvas-container">
+        <canvas id='canvas' width='1000px' height='1000px'></canvas>
+       <button id='button' onclick="window.location.href='https://gavi-d.github.io/shortest-path/'">Spherical Distance</button>
+       <button id='button' style="top: 20%; padding: 2px 8px;">Fagnano's Problem</button>
+    </div> -->
+    
+       
+</body>
+</html>
